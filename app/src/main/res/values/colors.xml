@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorMustard">#DBBF5D</color>  <!-- Jaune moutarde -->
+    <color name="colorBlue">#032C49</color>     <!-- Bleu clair -->
+    <color name="colorWhite">#FFFFFFFF</color>
+    <color name="colorBlack">#FF000000</color>
+    <color name="semiTransparentWhite">#CCFFFFFF</color>
+</resources>

@@ -1,0 +1,16 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Appliquer la couleur BLEUE -->
+    <solid android:color="@color/colorBlue" />
+
+    <!-- Coins arrondis -->
+    <corners android:radius="16dp" />
+
+    <!-- Effet de marge interne (optionnel) -->
+    <padding
+        android:left="8dp"
+        android:top="8dp"
+        android:right="8dp"
+        android:bottom="8dp"/>
+</shape>

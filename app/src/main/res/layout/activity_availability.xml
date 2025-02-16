@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_availability.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F6FA">
+
+    <!-- En-tête avec les informations du trajet -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="#4B66EA">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvDepartureCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MAR"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvDepartureCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Marseille"
+                android:textColor="#FFFFFF"
+                android:alpha="0.7"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3h15"
+            android:textColor="#FFFFFF"
+            android:alpha="0.7"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvArrivalCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PAR"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvArrivalCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paris"
+                android:textColor="#FFFFFF"
+                android:alpha="0.7"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- RecyclerView horizontal pour les dates -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:clipToPadding="false"
+        android:background="#4B66EA"/>
+
+    <!-- RecyclerView vertical pour les trajets -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTrainSchedules"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp"
+        android:clipToPadding="false"/>
+
+</LinearLayout>
